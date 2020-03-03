@@ -4,6 +4,10 @@ require_relative './dance_module.rb'
 class Dancer 
   include Dance 
   
+  class Dancer
+  extend MetaDancing
+end
+  
   attr_accessor :name 
 
   def initialize(name)
